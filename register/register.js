@@ -1,14 +1,17 @@
 async function registerUser() {
     try {
+      const email=  document.getElementById("email").value
+      const password = document.getElementById("password").value
+      const username= document.getElementById("username").value
       const response = await fetch("https://quiz-be-zeta.vercel.app/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          email: document.getElementById("email").value,
-          password: document.getElementById("password").value,
-          username: document.getElementById("username").value
+          email: email,
+          password: password,
+          username: username
         }),
       });
   
@@ -26,4 +29,4 @@ async function registerUser() {
     }
   }
   
-  document.querySelector(".register-button")?.addEventListener("click", registerUser);
+  document.querySelector(".prijavabtn2")?.addEventListener("click", registerUser);

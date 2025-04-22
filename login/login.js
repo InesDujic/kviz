@@ -1,4 +1,6 @@
 async function loginUser() {
+  const email = document.getElementById("email2").value
+  const password= document.getElementById("password").value
     try {
       const response = await fetch("https://quiz-be-zeta.vercel.app/auth/login", {
         method: "POST",
@@ -6,8 +8,8 @@ async function loginUser() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          email: document.getElementById("email").value,
-          password: document.getElementById("password").value,
+          email: email,
+          password: password
         }),
       });
   
@@ -26,4 +28,4 @@ async function loginUser() {
     }
   }
   
-  document.querySelector(".login-button")?.addEventListener("click", loginUser);
+  document.querySelector(".prijavabtn")?.addEventListener("click", loginUser);
