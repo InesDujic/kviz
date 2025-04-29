@@ -70,6 +70,7 @@
     background-color: white;
     text-decoration: none;
     border: 0px;
+    cursor: pointer;
 }
 .btn2{
     width: 142px;
@@ -79,6 +80,7 @@
     color:#FAFAFC ;
     text-decoration: none;
     border: 0px;
+    cursor: pointer;
 }
 .batoni{
     height: 15vh;
