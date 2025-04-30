@@ -14,42 +14,41 @@
 .parent{
 display: flex;
 flex-direction: column;
-width: 402px;
-height: 504px;
+width: 350px;
+height: 450px;
 border-radius: 16px;
 background-color: #FAFAFC;
-
 padding: 60px;
 }
 .logo{
 width: 70px;
 height: 23px;
+margin-bottom: 10px;
 }
 .gornji{
   height: 80%;
 width: 402px;
 }
-
 .glavnitekst{
 font-size: 30px;
 font-weight: 500;
 color: #000000;
+margin-bottom: 20px;
 }
 .donjitekst{
   font-size: 14px;
   color: #00000099;
   font-weight: 400;
   padding-top: 0px;
+  margin-bottom: 40px;
 }
 .donji{
   display: flex;
   flex-direction:row;
   align-items: center;
-  justify-content: center;
 gap: 14px;
   width: 402px;
   height:20%;
- 
 }
 .btn1{
 width: 130px;
@@ -57,14 +56,18 @@ height: 42px;
 color: #2559D2;
 border-radius: 8px;
 border: none;
+background-color: #FAFAFC;
+border: 1px solid #2559D2;
+cursor: pointer;
 }
 .btn2{
   width: 200px;
   height: 42px;
   background-color: #2559D2;
-  color: white;
+  color: #FAFAFC;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
   }
   .bodovidiv{
     width: 402px;
@@ -86,12 +89,10 @@ gap: 9px;
   .bodoviimg{
     width: 24px;
     height: 24px;
-    padding-top: 10px;
   }
   .boardimg{
     width: 24px;
     height: 24px;
-  padding-top: 10px;
   }
   .bodovi2{
     font-weight: 600;
