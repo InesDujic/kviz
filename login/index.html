@@ -2,37 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="parent">
-      <div class="left">
-        <img class="velikaslika" src="./Frame 35.png" />
-      </div>
-      <div class="right">
-        <div class="right1">
-          <img class="logo" src="./Quiz BiH copy.png" />
-          <p class="naslov">Prijavite se na vas racun</p>
-          <p class="podnaslov">Unesite informacije za prijavu</p>
-          <button class="btn">
-            <img class="btnslika" src="./icons8-google.svg" />
-            <p class="btntext">Prijavi se putem Google racuna</p>
-          </button>
+    <div class="container">
+      <video autoplay muted loop class="background-video">
+        <source src="./mostar.mp4" type="video/mp4" />
+      </video>
 
-          <input type="text" placeholder="email" class="email" id="email2">
-          <input type="password" placeholder="lozinka" class="lozinka" id="password">
-          <div class="malitextovi">
-            <p class="malitext1">Zaboravili ste lozinku?</p>
-            <p class="malitext2">Restartuj lozinku.</p>
-          </div>
-          <button class="prijavabtn">Prijavi se</button>
-          <div class="malitextovi2">
-            <p class="malitext3">Nemate racun?</p>
-            <p class="malitext4">Registruj se.</p>
-          </div>
+      <div class="right-side">
+        <h1>Quiz <span>BiH</span></h1>
+        <h2>Prijavite se na vaš račun</h2>
+        <p>Unesite informacije za prijavu</p>
+        <button class="google-login">
+          <p class="google-loginpic">Prijavi se putem Google računa</p> 
+        </button>
+        <div class="input-group">
+          <input type="email" id="email" placeholder="E-mail adresa" />
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Lozinka" />
+        </div>
+        <div class="password-options">
+          <a href="#">Zaboravili ste lozinku?</a>
+          <a href="#">Resetuj lozinku.</a>
+        </div>
+        <button class="login-button">Prijavi se</button>
+        <div class="register-link">
+          Nemate račun? <a href="register.html">Registruj se</a>
         </div>
       </div>
     </div>

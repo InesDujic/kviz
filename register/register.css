@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: "Steradian TRIAL", sans-serif;
+    display: flex;
+    height: 100vh;
+}
+.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.background-video {
+    position: fixed;       
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+    z-index: -1;  
+  }
+
+.right-side {
+    width: 400px;
+    background: #FAFAFC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    border-radius: 3%;
+}
+.right-side h1 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.right-side h1 span{
+    color: #2559d2;
+}
+
+.right-side h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.right-side p {
+    font-size: 14px;
+    color: #D9D9D9;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.input-group {
+    width: 100%;
+    margin: 15px 0;
+}
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #D9D9D9;
+    margin-bottom: 5px;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+}
+.register-button {
+    background: #2559d2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+.login-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+    color: #D9D9D9;
+}
+.login-link a {
+    color: #2559d2;
+    text-decoration: none;
+}

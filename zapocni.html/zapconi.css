@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Steradian Trial', sans-serif;
+}
+.parent{
+    height: 100vh;
+    width: 100%;
+    background-image:url(Rectangle\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    background-color: #FAFAFC;
+    width: 420px;
+    height: 504px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.logo{
+    height: 15px;
+}
+.spremi{
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 45px;
+}
+.pažljivo{
+    font-size: 14px;
+    color: black;
+    opacity: 60%;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+.emoji{
+    margin-right: 10px;
+}
+.text{
+    font-size: 16px;
+    color: black;
+    opacity: 60%;
+}
+.div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    justify-content: left;
+    margin-left: 45px;
+}
+.logoo{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.btn{
+    width: 142px;
+    height: 42px;
+    border-radius: 10px;
+    color: #2559D2;
+    background-color: white;
+    text-decoration: none;
+    border: 0px;
+    cursor: pointer;
+}
+.btn2{
+    width: 142px;
+    height: 42px;
+    border-radius: 10px;
+    background-color: #2559D2;
+    color:#FAFAFC ;
+    text-decoration: none;
+    border: 0px;
+    cursor: pointer;
+}
+.batoni{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

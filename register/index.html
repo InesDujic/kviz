@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./register.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="parent2">
-        <div class="left2">
-            <img class="velikaslika2" src="./Frame 45.svg">
-        </div>
-        <div class="right2">
-            <div class="right12">
-            <img class="logo2" src="../kviz/slike/Quiz BiH.png">
-            <p class="naslov2">Registrujte se na Quiz BiH</p>
-            <p class="podnaslov2">Popunite informacije za registraciju</p>
+  </head>
+  <body>
+    <div class="container">
+      <video autoplay muted loop class="background-video">
+        <source src="../login/mostar.mp4" type="video/mp4" />
+      </video>
 
-        <input type="text" placeholder="email" class="email2" id="email">
-        <input type="text" placeholder="Korisnicko ime" class="ime" id="username">
-        <input type="password" placeholder="lozinka" class="lozinka1" id="password">
-
-        <button class="prijavabtn2">Prijavi se</button>
-        <div class="malitextovi3">
-        <p class="malitext5">Vec imate racun?</p>
-        <p class="malitext6">Prijavi se.</p>
-</div>
-
-            </div>
-        </div>
+    <div class="right-side">
+      <h1>Quiz <span>BiH</span></h1>
+      <h2>Registrujte se na Quiz BiH</h2>
+      <p>Popunite informacije za registraciju</p>
+      <div class="input-group">
+        <input type="email" id="email" placeholder="E-mail" />
+      </div>
+      <div class="input-group">
+        <input type="text" id="username" placeholder="Korisničko ime" />
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Lozinka" />
+      </div>
+      <button class="register-button">Prijavi se</button>
+      <div class="login-link">
+        Već imate račun? <a href="login.html">Prijavi se</a>
+      </div>
     </div>
-    <script src="./register.js"></script>
-</body>
+</div>
+    <script src="./script.js"></script>
+  </body>
 </html>
