@@ -24,6 +24,19 @@ body {
       left: 0;
   }
   
+  button.btn1 {
+    height: 40px;
+    width: 120px;
+    border: 1px solid #2559D2;
+    color: #2559D2;
+    background-color: white;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+  
+  button.btn1:hover {
+    background-color: darkred;
+  }
   .background-video {
     position: fixed;       
     top: 50%;

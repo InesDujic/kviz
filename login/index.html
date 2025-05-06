@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./login.css" />
-    <title>Document</title>
+    <title>Login | Quiz BiH</title>
   </head>
   <body>
     <div class="container">
@@ -19,22 +19,27 @@
         <button class="google-login">
           <p class="google-loginpic">Prijavi se putem Google računa</p> 
         </button>
-        <div class="input-group">
-          <input type="email" id="email" placeholder="E-mail adresa" />
-        </div>
-        <div class="input-group">
-          <input type="password" id="password" placeholder="Lozinka" />
-        </div>
-        <div class="password-options">
-          <a href="#">Zaboravili ste lozinku?</a>
-          <a href="#">Resetuj lozinku.</a>
-        </div>
-        <button class="login-button">Prijavi se</button>
+
+        <form id="login-form">
+          <div class="input-group">
+            <input type="email" id="email" placeholder="E-mail adresa" required />
+          </div>
+          <div class="input-group">
+            <input type="password" id="password" placeholder="Lozinka" required />
+          </div>
+          <div class="password-options">
+            <a href="#">Zaboravili ste lozinku?</a>
+            <a href="#">Resetuj lozinku.</a>
+          </div>
+          <button type="submit" class="login-button">Prijavi se</button>
+        </form>
+
         <div class="register-link">
           Nemate račun? <a href="register.html">Registruj se</a>
         </div>
       </div>
     </div>
-    <script src="./login.js"></script>
+    <script src="./script.js"></script>
+    <script src="./btn.js"></script>
   </body>
 </html>

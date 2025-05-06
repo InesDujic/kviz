@@ -20,7 +20,7 @@ async function registerUser() {
       if (data.token) {
         localStorage.setItem("token", data.token);
         alert("Registracija uspješna! Token: " + data.token);
-        window.location.href = "index.html";
+        window.location.href = "../kviz/index.html";
       } else {
         alert("Nije uredu");
       }
@@ -33,3 +33,4 @@ async function registerUser() {
   document
     .querySelector(".register-button")
     ?.addEventListener("click", registerUser);
+
