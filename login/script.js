@@ -1,62 +1,31 @@
-async function loginUser() {
+async function loginUser(event) {
+  event.preventDefault();
   try {
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value;
-
-    if (!email || !password) {
-      alert("Molimo unesite i email i lozinku.");
-      return;
-    }
-
     const response = await fetch("https://quiz-be-zeta.vercel.app/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({
+        email: document.getElementById("email").value,
+        password: document.getElementById("password").value,
+      }),
     });
 
     const data = await response.json();
-    console.log("Odgovor servera:", data);
+    console.log("Odgovor servera", data);
+    console.log(window.location)
 
     if (data.token) {
       localStorage.setItem("token", data.token);
-      window.location.href = "./index.html";
+      window.location.href = "/kviz/index.html";
     } else {
-      alert("Greška pri loginu: " + (data.message || "Nepoznata greška"));
+      alert("Greška pri loginu: " + JSON.stringify(data));
     }
   } catch (error) {
-    console.error("Greška:", error);
+    console.log(error);
     alert("Došlo je do greške prilikom prijave.");
   }
 }
 
-document.querySelector("#login-form")?.addEventListener("submit", function (e) {
-  e.preventDefault();
-  loginUser();
-  zavrsiLogIn()
-});
-
-function zavrsiLogIn() {
-  console.log("završeno");
-  window.location.href = "../kviz/index.html";
-
-  const buttons = document.querySelectorAll("button");
-  buttons.forEach(btn => {
-    if (btn.id !== "logout-btn") {
-      btn.remove(); 
-    }
-  });
-  if (!document.getElementById("logout-btn")) {
-    const logoutBtn = document.createElement("button");
-    logoutBtn.id = "logout-btn";
-    logoutBtn.textContent = "Odjavi se";
-    logoutBtn.onclick = logoutUser;
-    document.body.appendChild(logoutBtn);
-  }
-}
-function logoutUser() {
-  localStorage.removeItem("token");
-  alert("Uspešno ste se odjavili.");
-  location.reload();
-}
+document.querySelector(".login-button")?.addEventListener("click", loginUser);
